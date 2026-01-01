@@ -1,0 +1,26 @@
+{
+    "ActivatePage": {
+        "validating": "確認中...",
+        "linkExpired": "リンクの有効期限が切れました",
+        "linkInvalid": "無効なリンク",
+        "linkExpiredDesc": "このアクティベーションリンクは有効期限が切れています。管理者に連絡して再送信してください。",
+        "linkInvalidDesc": "このアクティベーションリンクは無効です。メールを確認するか、管理者に連絡してください。",
+        "goToLogin": "ログインページへ",
+        "activateSuccess": "アクティベーション成功！",
+        "activateSuccessDesc": "アカウントがアクティベートされました。今すぐログインできます。",
+        "loginNow": "今すぐログイン",
+        "activateAccount": "アカウントを有効化",
+        "welcome": "ようこそ",
+        "newPassword": "新しいパスワード",
+        "newPasswordPlaceholder": "パスワードを入力（6文字以上）",
+        "confirmPassword": "パスワード確認",
+        "confirmPasswordPlaceholder": "パスワードを再入力",
+        "activateButton": "アカウントを有効化",
+        "processing": "処理中...",
+        "passwordMinLength": "パスワードは6文字以上必要です",
+        "passwordMismatch": "パスワードが一致しません",
+        "activating": "アカウントを有効化中...",
+        "activateSuccessToast": "アカウントが正常に有効化されました！",
+        "activateFailed": "アクティベーションに失敗しました"
+    }
+}

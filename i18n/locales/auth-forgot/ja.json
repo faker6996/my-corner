@@ -1,0 +1,14 @@
+{
+  "ForgotPassword": {
+    "backToLogin": "ログインに戻る",
+    "description": "メールアドレスを入力すると、パスワードリセットの手順をお送りします。",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "メールアドレスを入力",
+    "errorDefault": "送信に失敗しました。",
+    "heading": "パスワードを忘れた場合",
+    "rememberPassword": "パスワードを思い出しましたか？",
+    "sending": "送信中...",
+    "sentSuccess": "パスワードリセットの手順がメールに送信されました。",
+    "submitButton": "リセット手順を送信"
+  }
+}

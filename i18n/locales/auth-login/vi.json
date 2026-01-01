@@ -1,0 +1,26 @@
+{
+  "LoginPage": {
+    "dividerText": "Hoặc tiếp tục với",
+    "dontHaveAccount": "Chưa có tài khoản?",
+    "emailLabel": "Địa chỉ email",
+    "errors": {
+      "facebookLoginFailed": "Facebook đăng nhập thất bại",
+      "googleLoginFailed": "Google đăng nhập thất bại",
+      "loginFailed": "Đăng nhập thất bại"
+    },
+    "forgotPassword": "Quên mật khẩu?",
+    "heading": "Đăng nhập vào tài khoản của bạn",
+    "loggingIn": "Đang đăng nhập...",
+    "loginSuccess": "Đăng nhập thành công!",
+    "passwordLabel": "Mật khẩu",
+    "rememberMe": "Ghi nhớ đăng nhập",
+    "signInButton": "Đăng nhập",
+    "signUpLink": "Đăng ký",
+    "social": {
+      "facebook": "Facebook",
+      "google": "Google",
+      "loggingInFacebook": "Đang đăng nhập bằng Facebook...",
+      "loggingInGoogle": "Đang đăng nhập bằng Google..."
+    }
+  }
+}

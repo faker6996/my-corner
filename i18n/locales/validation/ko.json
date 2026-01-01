@@ -1,0 +1,7 @@
+{
+  "ValidationInput": {
+    "invalid": "잘못된 값",
+    "required": "이 필드는 필수입니다",
+    "typeMismatch": "잘못된 형식"
+  }
+}

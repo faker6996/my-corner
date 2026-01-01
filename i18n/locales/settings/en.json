@@ -1,0 +1,33 @@
+{
+  "Settings": {
+    "permissions": {
+      "title": "Permissions Management",
+      "subtitle": "Manage role-based permissions and access control",
+      "refresh": "Refresh",
+      "loadError": "Failed to load permissions",
+      "grantSuccess": "Permission granted successfully",
+      "revokeSuccess": "Permission revoked successfully",
+      "updateError": "Failed to update permission",
+      "forbidden": "Access Denied",
+      "forbiddenDesc": "You don't have permission to access this page",
+      "menuTree": "Menu Tree",
+      "selectMenu": "Select a menu to manage permissions",
+      "managePermissions": "Manage action permissions for this menu",
+      "noActions": "No actions defined for this menu",
+      "action": "Action",
+      "role": "Role",
+      "noMenuSelected": "No Menu Selected",
+      "selectMenuToStart": "Select a menu from the tree to manage its permissions",
+      "modeRole": "By role",
+      "modeUser": "By user",
+      "viewMode": "Mode",
+      "roleModeDesc": "Use roles to manage permissions for groups of users.",
+      "userModeDesc": "User-level permissions are added on top of role permissions.",
+      "searchUser": "Search user...",
+      "searching": "Searching...",
+      "selectedUser": "Selected user",
+      "selectUserToManage": "Select a user to manage direct permissions",
+      "userOverride": "User direct permission"
+    }
+  }
+}

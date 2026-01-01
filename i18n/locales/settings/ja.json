@@ -1,0 +1,33 @@
+{
+  "Settings": {
+    "permissions": {
+      "title": "権限管理",
+      "subtitle": "ロールベースの権限とアクセス制御を管理する",
+      "refresh": "再読み込み",
+      "loadError": "権限の読み込みに失敗しました",
+      "grantSuccess": "権限を正常に付与しました",
+      "revokeSuccess": "権限を正常に取り消しました",
+      "updateError": "権限の更新に失敗しました",
+      "forbidden": "アクセス拒否",
+      "forbiddenDesc": "このページにアクセスする権限がありません",
+      "menuTree": "メニュー ツリー",
+      "selectMenu": "権限を管理するメニューを選択してください",
+      "managePermissions": "このメニューの操作権限を管理します",
+      "noActions": "このメニューに定義された操作はありません",
+      "action": "操作",
+      "role": "ロール",
+      "noMenuSelected": "メニューが選択されていません",
+      "selectMenuToStart": "ツリーからメニューを選択して、その権限を管理してください",
+      "modeRole": "ロール別",
+      "modeUser": "ユーザー別",
+      "viewMode": "表示モード",
+      "roleModeDesc": "ロールを使って複数ユーザーの共通権限を管理します。",
+      "userModeDesc": "ユーザー単位の権限はロールの権限に加算されて適用されます。",
+      "searchUser": "ユーザーを検索...",
+      "searching": "検索中...",
+      "selectedUser": "選択中のユーザー",
+      "selectUserToManage": "個別権限を管理するユーザーを選択してください",
+      "userOverride": "ユーザー個別権限"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "ForbiddenPage": {
+    "backToHome": "ホームへ戻る",
+    "goBack": "戻る",
+    "subtitle": "このページを表示する権限がありません。",
+    "title": "アクセス拒否"
+  }
+}

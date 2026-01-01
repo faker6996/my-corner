@@ -1,0 +1,21 @@
+{
+    "ChangePasswordPage": {
+        "title": "パスワード変更",
+        "subtitle": "アカウントのセキュリティを保つためにパスワードを更新してください",
+        "currentPassword": "現在のパスワード",
+        "currentPasswordPlaceholder": "現在のパスワードを入力",
+        "currentPasswordRequired": "現在のパスワードを入力してください",
+        "newPassword": "新しいパスワード",
+        "newPasswordPlaceholder": "新しいパスワードを入力（6文字以上）",
+        "newPasswordRequired": "新しいパスワードを入力してください",
+        "confirmPassword": "新しいパスワードの確認",
+        "confirmPasswordPlaceholder": "新しいパスワードを再入力",
+        "confirmPasswordRequired": "新しいパスワードを確認してください",
+        "passwordMinLength": "パスワードは6文字以上必要です",
+        "passwordMismatch": "パスワードが一致しません",
+        "saveButton": "変更を保存",
+        "cancel": "キャンセル",
+        "changePasswordSuccess": "パスワードが正常に変更されました",
+        "changePasswordFailed": "パスワードの変更に失敗しました"
+    }
+}

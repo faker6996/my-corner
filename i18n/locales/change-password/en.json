@@ -1,0 +1,21 @@
+{
+    "ChangePasswordPage": {
+        "title": "Change Password",
+        "subtitle": "Update your password to keep your account secure",
+        "currentPassword": "Current Password",
+        "currentPasswordPlaceholder": "Enter your current password",
+        "currentPasswordRequired": "Current password is required",
+        "newPassword": "New Password",
+        "newPasswordPlaceholder": "Enter your new password (min 6 characters)",
+        "newPasswordRequired": "New password is required",
+        "confirmPassword": "Confirm New Password",
+        "confirmPasswordPlaceholder": "Re-enter your new password",
+        "confirmPasswordRequired": "Please confirm your new password",
+        "passwordMinLength": "Password must be at least 6 characters",
+        "passwordMismatch": "Passwords do not match",
+        "saveButton": "Save Changes",
+        "cancel": "Cancel",
+        "changePasswordSuccess": "Password changed successfully",
+        "changePasswordFailed": "Failed to change password"
+    }
+}

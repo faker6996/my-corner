@@ -1,0 +1,12 @@
+{
+    "Email": {
+        "inviteSubject": "アカウントを有効化してください",
+        "inviteTitle": "OCR Editorへようこそ",
+        "inviteBody": "システムへの参加を招待されました。以下のリンクをクリックしてアカウントを有効化し、パスワードを設定してください：",
+        "inviteExpiry": "このリンクは48時間で有効期限が切れます。",
+        "resetPasswordSubject": "パスワードをリセットしてください",
+        "resetPasswordTitle": "パスワードリセットのリクエスト",
+        "resetPasswordBody": "パスワードのリセットがリクエストされました。以下のリンクをクリックして新しいパスワードを設定してください：",
+        "resetPasswordExpiry": "このリンクは1時間で有効期限が切れます。"
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "ForbiddenPage": {
+    "backToHome": "Back to Home",
+    "goBack": "Go Back",
+    "subtitle": "You don't have permission to view this page.",
+    "title": "Access Denied"
+  }
+}

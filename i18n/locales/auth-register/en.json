@@ -1,0 +1,29 @@
+{
+  "RegisterPage": {
+    "alreadyHaveAccount": "Already have an account?",
+    "confirmPasswordLabel": "Confirm password",
+    "dividerText": "Or sign up with",
+    "emailLabel": "Email address",
+    "errors": {
+      "facebookRegisterFailed": "Facebook sign up failed",
+      "googleRegisterFailed": "Google sign up failed",
+      "passwordMismatch": "Passwords do not match",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "registerFailed": "Registration failed"
+    },
+    "heading": "Create your account",
+    "nameLabel": "Full name",
+    "passwordLabel": "Password",
+    "registerSuccess": "Account created successfully!",
+    "registering": "Creating account...",
+    "signInLink": "Sign in",
+    "signUpButton": "Sign up",
+    "social": {
+      "facebook": "Facebook",
+      "google": "Google",
+      "registeringFacebook": "Signing up with Facebook...",
+      "registeringGoogle": "Signing up with Google..."
+    },
+    "subtitle": "Join us to get started with OCR editing"
+  }
+}

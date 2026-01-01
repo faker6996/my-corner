@@ -1,0 +1,10 @@
+{
+  "ResetPassword": {
+    "backToLogin": "로그인으로 돌아가기",
+    "errorDefault": "오류가 발생했습니다",
+    "heading": "비밀번호 재설정",
+    "passwordPlaceholder": "새 비밀번호 입력",
+    "submitButton": "업데이트",
+    "successTitle": "비밀번호가 성공적으로 변경되었습니다!"
+  }
+}

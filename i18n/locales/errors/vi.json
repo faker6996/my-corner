@@ -1,0 +1,7 @@
+{
+  "ErrorPage": {
+    "message": "Có gì đó không ổn",
+    "retry": "Thử lại",
+    "title": "Đã xảy ra lỗi!"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "ProfilePage": {
+    "about": "Giới thiệu",
+    "editProfile": "Chỉnh sửa hồ sơ",
+    "loading": "Đang tải...",
+    "user": "Người dùng",
+    "updateInfoTitle": "Cập nhật thông tin của",
+    "subtitle": "Quản lý thông tin hồ sơ của bạn",
+    "name": "Tên",
+    "enterName": "Nhập tên của bạn",
+    "nameRequired": "Tên là bắt buộc",
+    "mail": "Email",
+    "role": "Vai trò",
+    "avatar": "Ảnh đại diện",
+    "chooseFile": "Chọn tệp",
+    "noFileChosen": "Chưa chọn tệp",
+    "validFormats": "Chỉ hợp lệ với định dạng jpeg, gif, png, jpg, bmp, svg",
+    "update": "Cập nhật",
+    "updateSuccess": "Cập nhật hồ sơ thành công",
+    "updateFailed": "Cập nhật hồ sơ thất bại",
+    "invalidFileType": "Định dạng tệp không hợp lệ"
+  }
+}

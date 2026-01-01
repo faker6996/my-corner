@@ -1,0 +1,26 @@
+{
+    "ActivatePage": {
+        "validating": "Validating...",
+        "linkExpired": "Link expired",
+        "linkInvalid": "Invalid link",
+        "linkExpiredDesc": "This activation link has expired. Please contact the administrator to resend.",
+        "linkInvalidDesc": "This activation link is invalid. Please check your email or contact the administrator.",
+        "goToLogin": "Go to login",
+        "activateSuccess": "Activation successful!",
+        "activateSuccessDesc": "Your account has been activated. You can log in now.",
+        "loginNow": "Login now",
+        "activateAccount": "Activate Account",
+        "welcome": "Welcome",
+        "newPassword": "New Password",
+        "newPasswordPlaceholder": "Enter password (minimum 6 characters)",
+        "confirmPassword": "Confirm Password",
+        "confirmPasswordPlaceholder": "Re-enter password",
+        "activateButton": "Activate Account",
+        "processing": "Processing...",
+        "passwordMinLength": "Password must be at least 6 characters",
+        "passwordMismatch": "Passwords do not match",
+        "activating": "Activating account...",
+        "activateSuccessToast": "Account activated successfully!",
+        "activateFailed": "Activation failed"
+    }
+}

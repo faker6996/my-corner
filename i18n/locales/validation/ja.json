@@ -1,0 +1,7 @@
+{
+  "ValidationInput": {
+    "invalid": "無効な値",
+    "required": "この項目は必須です",
+    "typeMismatch": "無効な形式"
+  }
+}

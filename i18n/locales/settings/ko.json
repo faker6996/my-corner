@@ -1,0 +1,33 @@
+{
+  "Settings": {
+    "permissions": {
+      "title": "권한 관리",
+      "subtitle": "역할 기반 권한과 접근 제어를 관리합니다",
+      "refresh": "새로고침",
+      "loadError": "권한을 불러오지 못했습니다",
+      "grantSuccess": "권한이 성공적으로 부여되었습니다",
+      "revokeSuccess": "권한이 성공적으로 해제되었습니다",
+      "updateError": "권한을 업데이트하지 못했습니다",
+      "forbidden": "접근 거부",
+      "forbiddenDesc": "이 페이지에 접근할 권한이 없습니다",
+      "menuTree": "메뉴 트리",
+      "selectMenu": "권한을 관리할 메뉴를 선택하세요",
+      "managePermissions": "이 메뉴의 액션 권한을 관리합니다",
+      "noActions": "이 메뉴에 정의된 액션이 없습니다",
+      "action": "액션",
+      "role": "역할",
+      "noMenuSelected": "선택된 메뉴가 없습니다",
+      "selectMenuToStart": "트리에서 메뉴를 선택해 해당 권한을 관리하세요",
+      "modeRole": "역할 기준",
+      "modeUser": "사용자 기준",
+      "viewMode": "보기 모드",
+      "roleModeDesc": "역할을 사용해 여러 사용자의 공통 권한을 관리합니다.",
+      "userModeDesc": "사용자별 권한은 역할 권한 위에 추가로 적용됩니다.",
+      "searchUser": "사용자 검색...",
+      "searching": "검색 중...",
+      "selectedUser": "선택된 사용자",
+      "selectUserToManage": "직접 권한을 관리할 사용자를 선택하세요",
+      "userOverride": "사용자 직접 권한"
+    }
+  }
+}

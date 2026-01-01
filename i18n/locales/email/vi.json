@@ -1,0 +1,12 @@
+{
+    "Email": {
+        "inviteSubject": "Kích hoạt tài khoản của bạn",
+        "inviteTitle": "Chào mừng bạn đến với OCR Editor",
+        "inviteBody": "Bạn đã được mời tham gia hệ thống. Vui lòng click vào link bên dưới để kích hoạt tài khoản và đặt mật khẩu:",
+        "inviteExpiry": "Link này sẽ hết hạn sau 48 giờ.",
+        "resetPasswordSubject": "Đặt lại mật khẩu của bạn",
+        "resetPasswordTitle": "Yêu cầu đặt lại mật khẩu",
+        "resetPasswordBody": "Bạn đã yêu cầu đặt lại mật khẩu. Vui lòng click vào link bên dưới để đặt mật khẩu mới:",
+        "resetPasswordExpiry": "Link này sẽ hết hạn sau 1 giờ."
+    }
+}

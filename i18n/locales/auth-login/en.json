@@ -1,0 +1,26 @@
+{
+  "LoginPage": {
+    "dividerText": "Or continue with",
+    "dontHaveAccount": "Don't have an account?",
+    "emailLabel": "Email address",
+    "errors": {
+      "facebookLoginFailed": "Facebook login failed",
+      "googleLoginFailed": "Google login failed",
+      "loginFailed": "Login failed"
+    },
+    "forgotPassword": "Forgot password?",
+    "heading": "Sign in to your account",
+    "loggingIn": "Logging in...",
+    "loginSuccess": "Login successful!",
+    "passwordLabel": "Password",
+    "rememberMe": "Remember me",
+    "signInButton": "Sign in",
+    "signUpLink": "Sign up",
+    "social": {
+      "facebook": "Facebook",
+      "google": "Google",
+      "loggingInFacebook": "Logging in with Facebook...",
+      "loggingInGoogle": "Logging in with Google..."
+    }
+  }
+}

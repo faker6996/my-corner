@@ -1,0 +1,10 @@
+{
+  "ResetPassword": {
+    "backToLogin": "Back to login",
+    "errorDefault": "An error occurred",
+    "heading": "Reset Password",
+    "passwordPlaceholder": "Enter new password",
+    "submitButton": "Update",
+    "successTitle": "Password changed successfully!"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "Common": {
+    "accuracy": "精度",
+    "actions": "アクション",
+    "columns": "列",
+    "comfortable": "快適",
+    "compact": "コンパクト",
+    "created": "作成日",
+    "density": "密度",
+    "logs": "ログ",
+    "roles": "ロール",
+    "permissions": "権限",
+    "home": "ホーム",
+    "newTask": "新規タスク",
+    "tasks": "タスク",
+    "ocrProcessing": "OCR処理",
+    "profile": "プロフィール",
+    "settings": "設定",
+    "logout": "ログアウト",
+    "logoutFailed": "ログアウトに失敗しました。もう一度お試しください。",
+    "search": "検索",
+    "normal": "標準",
+    "searchByTitle": "タイトルで検索...",
+    "size": "サイズ",
+    "status": "ステータス",
+    "title": "タイトル",
+    "pending": "保留中",
+    "processing": "処理中",
+    "completed": "完了",
+    "failed": "失敗",
+    "users": "ユーザー"
+  }
+}

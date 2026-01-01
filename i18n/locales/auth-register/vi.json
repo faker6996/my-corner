@@ -1,0 +1,29 @@
+{
+  "RegisterPage": {
+    "alreadyHaveAccount": "Đã có tài khoản?",
+    "confirmPasswordLabel": "Xác nhận mật khẩu",
+    "dividerText": "Hoặc đăng ký với",
+    "emailLabel": "Địa chỉ email",
+    "errors": {
+      "facebookRegisterFailed": "Đăng ký Facebook thất bại",
+      "googleRegisterFailed": "Đăng ký Google thất bại",
+      "passwordMismatch": "Mật khẩu không khớp",
+      "passwordTooShort": "Mật khẩu phải có ít nhất 6 ký tự",
+      "registerFailed": "Đăng ký thất bại"
+    },
+    "heading": "Tạo tài khoản của bạn",
+    "nameLabel": "Họ và tên",
+    "passwordLabel": "Mật khẩu",
+    "registerSuccess": "Tạo tài khoản thành công!",
+    "registering": "Đang tạo tài khoản...",
+    "signInLink": "Đăng nhập",
+    "signUpButton": "Đăng ký",
+    "social": {
+      "facebook": "Facebook",
+      "google": "Google",
+      "registeringFacebook": "Đang đăng ký bằng Facebook...",
+      "registeringGoogle": "Đang đăng ký bằng Google..."
+    },
+    "subtitle": "Tham gia với chúng tôi để bắt đầu chỉnh sửa OCR"
+  }
+}

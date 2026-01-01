@@ -1,0 +1,15 @@
+{
+  "Pagination": {
+    "navigationLabel": "페이지네이션 내비게이션",
+    "showingResults": "{total}개 중 {start}-{end}개 표시",
+    "firstPage": "첫 페이지",
+    "previousPage": "이전 페이지",
+    "next": "다음",
+    "previous": "이전",
+    "lastPage": "마지막 페이지",
+    "pageNumber": "페이지 {page}",
+    "itemsPerPage": "페이지당 항목",
+    "search": "검색",
+    "noOptions": "옵션 없음"
+  }
+}

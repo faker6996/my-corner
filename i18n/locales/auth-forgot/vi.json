@@ -1,0 +1,14 @@
+{
+  "ForgotPassword": {
+    "backToLogin": "Quay lại Đăng nhập",
+    "description": "Nhập địa chỉ email của bạn và chúng tôi sẽ gửi hướng dẫn đặt lại mật khẩu.",
+    "emailLabel": "Địa chỉ Email",
+    "emailPlaceholder": "Nhập email của bạn",
+    "errorDefault": "Gửi thất bại.",
+    "heading": "Quên mật khẩu",
+    "rememberPassword": "Nhớ lại mật khẩu?",
+    "sending": "Đang gửi...",
+    "sentSuccess": "Hướng dẫn đặt lại mật khẩu đã được gửi về email.",
+    "submitButton": "Gửi hướng dẫn đặt lại"
+  }
+}

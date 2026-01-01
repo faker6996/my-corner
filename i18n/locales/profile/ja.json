@@ -1,0 +1,23 @@
+{
+  "ProfilePage": {
+    "about": "について",
+    "editProfile": "プロフィールを編集",
+    "loading": "読み込み中...",
+    "user": "ユーザー",
+    "updateInfoTitle": "情報を更新",
+    "subtitle": "プロフィール情報を管理",
+    "name": "名前",
+    "enterName": "名前を入力してください",
+    "nameRequired": "名前は必須です",
+    "mail": "メール",
+    "role": "役割",
+    "avatar": "アバター",
+    "chooseFile": "ファイルを選択",
+    "noFileChosen": "ファイルが選択されていません",
+    "validFormats": "jpeg, gif, png, jpg, bmp, svg形式のみ有効",
+    "update": "更新",
+    "updateSuccess": "プロフィールが正常に更新されました",
+    "updateFailed": "プロフィールの更新に失敗しました",
+    "invalidFileType": "無効なファイル形式"
+  }
+}

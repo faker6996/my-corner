@@ -1,0 +1,26 @@
+{
+    "ActivatePage": {
+        "validating": "확인 중...",
+        "linkExpired": "링크가 만료되었습니다",
+        "linkInvalid": "유효하지 않은 링크",
+        "linkExpiredDesc": "이 활성화 링크가 만료되었습니다. 관리자에게 연락하여 다시 보내주세요.",
+        "linkInvalidDesc": "이 활성화 링크가 유효하지 않습니다. 이메일을 확인하거나 관리자에게 문의하세요.",
+        "goToLogin": "로그인 페이지로",
+        "activateSuccess": "활성화 성공!",
+        "activateSuccessDesc": "계정이 활성화되었습니다. 지금 로그인할 수 있습니다.",
+        "loginNow": "지금 로그인",
+        "activateAccount": "계정 활성화",
+        "welcome": "환영합니다",
+        "newPassword": "새 비밀번호",
+        "newPasswordPlaceholder": "비밀번호 입력 (최소 6자)",
+        "confirmPassword": "비밀번호 확인",
+        "confirmPasswordPlaceholder": "비밀번호 재입력",
+        "activateButton": "계정 활성화",
+        "processing": "처리 중...",
+        "passwordMinLength": "비밀번호는 최소 6자 이상이어야 합니다",
+        "passwordMismatch": "비밀번호가 일치하지 않습니다",
+        "activating": "계정 활성화 중...",
+        "activateSuccessToast": "계정이 성공적으로 활성화되었습니다!",
+        "activateFailed": "활성화 실패"
+    }
+}

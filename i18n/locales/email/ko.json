@@ -1,0 +1,12 @@
+{
+    "Email": {
+        "inviteSubject": "계정을 활성화하세요",
+        "inviteTitle": "OCR Editor에 오신 것을 환영합니다",
+        "inviteBody": "시스템에 참여하도록 초대되었습니다. 아래 링크를 클릭하여 계정을 활성화하고 비밀번호를 설정하세요:",
+        "inviteExpiry": "이 링크는 48시간 후에 만료됩니다.",
+        "resetPasswordSubject": "비밀번호를 재설정하세요",
+        "resetPasswordTitle": "비밀번호 재설정 요청",
+        "resetPasswordBody": "비밀번호 재설정을 요청하셨습니다. 아래 링크를 클릭하여 새 비밀번호를 설정하세요:",
+        "resetPasswordExpiry": "이 링크는 1시간 후에 만료됩니다."
+    }
+}

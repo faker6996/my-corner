@@ -1,0 +1,33 @@
+{
+  "Settings": {
+    "permissions": {
+      "title": "Quản Lý Phân Quyền",
+      "subtitle": "Quản lý quyền truy cập theo vai trò hoặc theo từng người dùng",
+      "refresh": "Làm Mới",
+      "loadError": "Không thể tải danh sách phân quyền",
+      "grantSuccess": "Cấp quyền thành công",
+      "revokeSuccess": "Thu hồi quyền thành công",
+      "updateError": "Không thể cập nhật quyền",
+      "forbidden": "Truy Cập Bị Từ Chối",
+      "forbiddenDesc": "Bạn không có quyền truy cập trang này",
+      "menuTree": "Cây Menu",
+      "selectMenu": "Chọn menu để quản lý phân quyền",
+      "managePermissions": "Quản lý quyền thao tác cho menu này",
+      "noActions": "Không có thao tác nào được định nghĩa cho menu này",
+      "action": "Thao Tác",
+      "role": "Vai trò",
+      "noMenuSelected": "Chưa Chọn Menu",
+      "selectMenuToStart": "Chọn một menu từ cây để quản lý phân quyền của nó",
+      "modeRole": "Theo vai trò",
+      "modeUser": "Theo người dùng",
+      "viewMode": "Chế độ xem",
+      "roleModeDesc": "Sử dụng vai trò để quản lý quyền chung cho nhiều người dùng.",
+      "userModeDesc": "Quyền theo người dùng sẽ được cộng thêm trên các quyền theo vai trò.",
+      "searchUser": "Tìm kiếm người dùng...",
+      "searching": "Đang tìm...",
+      "selectedUser": "Người dùng đã chọn",
+      "selectUserToManage": "Chọn người dùng để quản lý quyền trực tiếp",
+      "userOverride": "Quyền trực tiếp của người dùng"
+    }
+  }
+}

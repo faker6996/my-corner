@@ -1,0 +1,26 @@
+{
+    "ActivatePage": {
+        "validating": "Đang xác thực...",
+        "linkExpired": "Link đã hết hạn",
+        "linkInvalid": "Link không hợp lệ",
+        "linkExpiredDesc": "Link kích hoạt này đã hết hạn. Vui lòng liên hệ quản trị viên để được gửi lại.",
+        "linkInvalidDesc": "Link kích hoạt này không hợp lệ. Vui lòng kiểm tra lại email hoặc liên hệ quản trị viên.",
+        "goToLogin": "Về trang đăng nhập",
+        "activateSuccess": "Kích hoạt thành công!",
+        "activateSuccessDesc": "Tài khoản của bạn đã được kích hoạt. Bạn có thể đăng nhập ngay bây giờ.",
+        "loginNow": "Đăng nhập ngay",
+        "activateAccount": "Kích hoạt tài khoản",
+        "welcome": "Chào mừng",
+        "newPassword": "Mật khẩu mới",
+        "newPasswordPlaceholder": "Nhập mật khẩu (tối thiểu 6 ký tự)",
+        "confirmPassword": "Xác nhận mật khẩu",
+        "confirmPasswordPlaceholder": "Nhập lại mật khẩu",
+        "activateButton": "Kích hoạt tài khoản",
+        "processing": "Đang xử lý...",
+        "passwordMinLength": "Mật khẩu phải có ít nhất 6 ký tự",
+        "passwordMismatch": "Mật khẩu xác nhận không khớp",
+        "activating": "Đang kích hoạt tài khoản...",
+        "activateSuccessToast": "Kích hoạt tài khoản thành công!",
+        "activateFailed": "Kích hoạt thất bại"
+    }
+}

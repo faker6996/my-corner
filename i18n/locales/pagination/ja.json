@@ -1,0 +1,16 @@
+{
+  "Pagination": {
+    "navigationLabel": "ページナビゲーション",
+    "showingResults": "{totalItems}件中{startItem}～{endItem}件を表示",
+    "firstPage": "最初のページ",
+    "previousPage": "前のページ",
+    "previous": "前へ",
+    "nextPage": "次のページ",
+    "next": "次へ",
+    "lastPage": "最後のページ",
+    "pageNumber": "ページ{page}",
+    "itemsPerPage": "1ページあたりの件数",
+    "search": "検索",
+    "noOptions": "オプションなし"
+  }
+}

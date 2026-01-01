@@ -1,0 +1,16 @@
+{
+  "Pagination": {
+    "navigationLabel": "Điều hướng trang",
+    "showingResults": "Hiển thị {startItem} đến {endItem} trong tổng số {totalItems} kết quả",
+    "firstPage": "Trang đầu",
+    "previousPage": "Trang trước",
+    "previous": "Trước",
+    "nextPage": "Trang sau",
+    "next": "Sau",
+    "lastPage": "Trang cuối",
+    "pageNumber": "Trang {page}",
+    "itemsPerPage": "Số item mỗi trang",
+    "search": "Tìm kiếm",
+    "noOptions": "Không có tùy chọn"
+  }
+}

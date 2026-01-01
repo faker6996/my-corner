@@ -1,0 +1,23 @@
+{
+  "ProfilePage": {
+    "about": "About",
+    "editProfile": "Edit profile",
+    "loading": "Loading...",
+    "user": "User",
+    "updateInfoTitle": "Update information of",
+    "subtitle": "Manage your profile information",
+    "name": "Name",
+    "enterName": "Enter your name",
+    "nameRequired": "Name is required",
+    "mail": "Mail",
+    "role": "Role",
+    "avatar": "Avatar",
+    "chooseFile": "Choose File",
+    "noFileChosen": "No file chosen",
+    "validFormats": "Valid only for jpeg, gif, png, jpg, bmp, svg file formats",
+    "update": "Update",
+    "updateSuccess": "Profile updated successfully",
+    "updateFailed": "Failed to update profile",
+    "invalidFileType": "Invalid file type"
+  }
+}

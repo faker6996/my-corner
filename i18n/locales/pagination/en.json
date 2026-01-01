@@ -1,0 +1,16 @@
+{
+  "Pagination": {
+    "navigationLabel": "Page navigation",
+    "showingResults": "Showing {startItem} to {endItem} of {totalItems} results",
+    "firstPage": "First page",
+    "previousPage": "Previous page",
+    "previous": "Previous",
+    "nextPage": "Next page",
+    "next": "Next",
+    "lastPage": "Last page",
+    "pageNumber": "Page {page}",
+    "itemsPerPage": "Items per page",
+    "search": "Search",
+    "noOptions": "No options"
+  }
+}

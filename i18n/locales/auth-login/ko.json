@@ -1,0 +1,24 @@
+{
+  "LoginPage": {
+    "dividerText": "또는 계속하기",
+    "emailLabel": "이메일 주소",
+    "errors": {
+      "facebookLoginFailed": "Facebook 로그인 실패",
+      "googleLoginFailed": "Google 로그인 실패",
+      "loginFailed": "로그인 실패"
+    },
+    "forgotPassword": "비밀번호를 잊으셨나요?",
+    "heading": "계정에 로그인",
+    "loggingIn": "로그인 중...",
+    "loginSuccess": "로그인 성공!",
+    "passwordLabel": "비밀번호",
+    "rememberMe": "로그인 상태 유지",
+    "signInButton": "로그인",
+    "social": {
+      "facebook": "Facebook",
+      "google": "Google",
+      "loggingInFacebook": "Facebook으로 로그인 중...",
+      "loggingInGoogle": "Google로 로그인 중..."
+    }
+  }
+}

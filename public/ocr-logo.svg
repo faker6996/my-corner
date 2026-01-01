@@ -1,0 +1,29 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        /* Logo dùng màu primary theo theme (giống globals.css) */
+        svg { color: oklch(63% 0.238 255); } /* light primary */
+        @media (prefers-color-scheme: dark) {
+        svg { color: oklch(70% 0.24 255); } /* dark primary */
+        }
+    </style>
+    <g stroke="currentColor" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"
+        fill="none">
+        <!-- Corner brackets -->
+        <path d="M60 150V60H150" />
+        <path d="M362 60H452V150" />
+        <path d="M60 362V452H150" />
+        <path d="M362 452H452V362" />
+
+        <!-- Document outline (shifted slightly right for centering) -->
+        <path
+            d="M182 130H312L362 180V360C362 380 352 390 332 390H182C162 390 152 380 152 360V160C152 140 162 130 182 130Z" />
+
+        <!-- Folded corner -->
+        <path d="M312 130V180H362" />
+
+        <!-- Text lines -->
+        <line x1="202" y1="210" x2="302" y2="210" />
+        <line x1="202" y1="260" x2="322" y2="260" />
+        <line x1="202" y1="310" x2="272" y2="310" />
+    </g>
+</svg>

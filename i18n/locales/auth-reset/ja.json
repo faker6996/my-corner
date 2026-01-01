@@ -1,0 +1,10 @@
+{
+  "ResetPassword": {
+    "backToLogin": "ログインに戻る",
+    "errorDefault": "エラーが発生しました",
+    "heading": "パスワードリセット",
+    "passwordPlaceholder": "新しいパスワードを入力",
+    "submitButton": "更新",
+    "successTitle": "パスワードが正常に変更されました！"
+  }
+}

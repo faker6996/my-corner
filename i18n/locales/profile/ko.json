@@ -1,0 +1,23 @@
+{
+  "ProfilePage": {
+    "about": "소개",
+    "editProfile": "프로필 편집",
+    "loading": "로딩 중...",
+    "user": "사용자",
+    "updateInfoTitle": "정보 업데이트",
+    "subtitle": "프로필 정보를 관리하세요",
+    "name": "이름",
+    "enterName": "이름을 입력하세요",
+    "nameRequired": "이름은 필수입니다",
+    "mail": "이메일",
+    "role": "역할",
+    "avatar": "아바타",
+    "chooseFile": "파일 선택",
+    "noFileChosen": "파일이 선택되지 않음",
+    "validFormats": "jpeg, gif, png, jpg, bmp, svg 형식만 유효",
+    "update": "업데이트",
+    "updateSuccess": "프로필이 성공적으로 업데이트되었습니다",
+    "updateFailed": "프로필 업데이트 실패",
+    "invalidFileType": "잘못된 파일 형식"
+  }
+}

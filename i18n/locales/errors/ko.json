@@ -1,0 +1,8 @@
+{
+  "ForbiddenPage": {
+    "backToHome": "홈으로",
+    "goBack": "뒤로 가기",
+    "subtitle": "이 페이지를 볼 권한이 없습니다.",
+    "title": "접근 거부"
+  }
+}

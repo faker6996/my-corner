@@ -1,0 +1,24 @@
+{
+  "LoginPage": {
+    "dividerText": "または続行",
+    "emailLabel": "メールアドレス",
+    "errors": {
+      "facebookLoginFailed": "Facebookログインに失敗しました",
+      "googleLoginFailed": "Googleログインに失敗しました",
+      "loginFailed": "ログインに失敗しました"
+    },
+    "forgotPassword": "パスワードをお忘れですか？",
+    "heading": "アカウントにサインイン",
+    "loggingIn": "ログイン中...",
+    "loginSuccess": "ログイン成功！",
+    "passwordLabel": "パスワード",
+    "rememberMe": "ログイン状態を保持",
+    "signInButton": "サインイン",
+    "social": {
+      "facebook": "Facebook",
+      "google": "Google",
+      "loggingInFacebook": "Facebookでログイン中...",
+      "loggingInGoogle": "Googleでログイン中..."
+    }
+  }
+}

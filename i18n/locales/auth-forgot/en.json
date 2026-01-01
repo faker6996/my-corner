@@ -1,0 +1,14 @@
+{
+  "ForgotPassword": {
+    "backToLogin": "Back to Login",
+    "description": "Enter your email address and we'll send you instructions to reset your password.",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "errorDefault": "Send failed.",
+    "heading": "Forgot Password",
+    "rememberPassword": "Remember your password?",
+    "sending": "Sending...",
+    "sentSuccess": "Password reset instructions have been sent to your email.",
+    "submitButton": "Send Reset Instructions"
+  }
+}

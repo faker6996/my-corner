@@ -1,0 +1,7 @@
+{
+  "ValidationInput": {
+    "invalid": "Invalid value",
+    "required": "This field is required",
+    "typeMismatch": "Invalid format"
+  }
+}

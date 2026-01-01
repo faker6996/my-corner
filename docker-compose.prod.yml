@@ -1,0 +1,107 @@
+version: "3.8"
+
+services:
+  # BachTV's Corner - Personal Blog
+  my-corner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_CHAT_SERVER_URL: ${NEXT_PUBLIC_CHAT_SERVER_URL:-ws://192.168.210.100:4000}
+    image: my-corner:latest
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}:3000"
+    env_file:
+      - .env.prod
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      # Ensure server-side resolves uploads under container path
+      UPLOAD_DIR: /app/public
+      # Optional: point server to realtime gateway if not coming from env file
+      WS_URL: ${WS_URL:-http://realtime:4000}
+    # Run as root to avoid host bind mount permission issues
+    user: "0:0"
+    volumes:
+      # Mount upload directory to stable host path
+      - /opt/my-corner/public/uploads:/app/public/uploads
+      # Mount logs directory to stable host path
+      - /opt/my-corner/logs:/app/logs
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3000/api/health || curl -f http://localhost:3000/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: "1.0"
+        reservations:
+          memory: 512M
+          cpus: "0.5"
+    depends_on:
+      - realtime
+    networks:
+      - my-corner-network
+
+  # Socket.IO Realtime Gateway
+  realtime:
+    image: node:23-slim
+    working_dir: /app
+    command: ["node", "realtime/server.cjs"]
+    ports:
+      - "${WS_PORT:-4000}:4000"
+    env_file:
+      - .env.prod
+    environment:
+      NODE_ENV: production
+      WS_PORT: 4000
+    volumes:
+      - ./:/app
+    networks:
+      - ocr-network
+
+  # Development version - Commented out for now
+  # ocr-editing-dev:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   image: ocr-editing:dev
+  #   restart: unless-stopped
+  #   ports:
+  #     - "3001:3000"  # Dev runs on port 3001
+  #   env_file:
+  #     - .env.local
+  #   environment:
+  #     NODE_ENV: development
+  #     PORT: 3000  # Internal port
+  #   volumes:
+  #     # Mount upload directory
+  #     - ./public/uploads:/app/public/uploads
+  #     # Mount logs
+  #     - ./logs:/app/logs
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "curl -f http://localhost:3000/api/health || curl -f http://localhost:3000/ || exit 1"]
+  #     interval: 30s
+  #     timeout: 10s
+  #     retries: 5
+  #     start_period: 40s
+  #   # Lower resource limits for dev
+  #   deploy:
+  #     resources:
+  #       limits:
+  #         memory: 512M
+  #         cpus: '0.5'
+  #       reservations:
+  #         memory: 256M
+  #         cpus: '0.25'
+
+# Isolated network for application
+networks:
+  my-corner-network:
+    driver: bridge
+    name: my-corner-network

@@ -1,0 +1,21 @@
+{
+    "ChangePasswordPage": {
+        "title": "Đổi mật khẩu",
+        "subtitle": "Cập nhật mật khẩu để bảo mật tài khoản của bạn",
+        "currentPassword": "Mật khẩu hiện tại",
+        "currentPasswordPlaceholder": "Nhập mật khẩu hiện tại",
+        "currentPasswordRequired": "Vui lòng nhập mật khẩu hiện tại",
+        "newPassword": "Mật khẩu mới",
+        "newPasswordPlaceholder": "Nhập mật khẩu mới (tối thiểu 6 ký tự)",
+        "newPasswordRequired": "Vui lòng nhập mật khẩu mới",
+        "confirmPassword": "Xác nhận mật khẩu mới",
+        "confirmPasswordPlaceholder": "Nhập lại mật khẩu mới",
+        "confirmPasswordRequired": "Vui lòng xác nhận mật khẩu mới",
+        "passwordMinLength": "Mật khẩu phải có ít nhất 6 ký tự",
+        "passwordMismatch": "Mật khẩu xác nhận không khớp",
+        "saveButton": "Lưu thay đổi",
+        "cancel": "Hủy",
+        "changePasswordSuccess": "Đổi mật khẩu thành công",
+        "changePasswordFailed": "Đổi mật khẩu thất bại"
+    }
+}

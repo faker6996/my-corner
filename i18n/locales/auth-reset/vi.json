@@ -1,0 +1,10 @@
+{
+  "ResetPassword": {
+    "backToLogin": "Quay về trang đăng nhập",
+    "errorDefault": "Đã có lỗi xảy ra",
+    "heading": "Đặt lại mật khẩu",
+    "passwordPlaceholder": "Nhập mật khẩu mới",
+    "submitButton": "Cập nhật",
+    "successTitle": "Đổi mật khẩu thành công!"
+  }
+}
