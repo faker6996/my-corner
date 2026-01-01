@@ -11,13 +11,17 @@ const PUBLIC_ROUTES = [
   "/delete-data",
   "/api/auth/sso_facebook",
   API_ROUTES.AUTH.SSO_GOOGLE,
+  // Public pages (no auth required)
+  "/dashboard",
+  "/403",
+  "/activate",
 ];
 
 export async function withAuth(req: NextRequest, res: NextResponse): Promise<NextResponse> {
   const pathname = req.nextUrl.pathname;
 
   // Skip auth check for API routes - let them handle their own auth
-  if (pathname.startsWith('/api')) {
+  if (pathname.startsWith("/api")) {
     return res;
   }
 
