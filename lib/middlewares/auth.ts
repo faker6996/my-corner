@@ -15,6 +15,7 @@ const PUBLIC_ROUTES = [
   "/dashboard",
   "/403",
   "/activate",
+  "", // Root path /{locale}
 ];
 
 export async function withAuth(req: NextRequest, res: NextResponse): Promise<NextResponse> {
@@ -28,8 +29,12 @@ export async function withAuth(req: NextRequest, res: NextResponse): Promise<Nex
   // Lấy locale từ URL (vd: /vi/login → locale = 'vi')
   const segments = pathname.split("/");
   const locale = segments[1] || "vi"; // fallback locale mặc định
+  const pathAfterLocale = "/" + segments.slice(2).join("/");
 
-  const isPublic = PUBLIC_ROUTES.some((path) => pathname.startsWith(`/${locale}${path}`));
+  // Check if path is public (matches locale root or any public route)
+  const isLocaleRoot = segments.length === 2 && ["vi", "en", "ko", "ja"].includes(segments[1]);
+  const isPublic = isLocaleRoot || PUBLIC_ROUTES.some((path) => pathname.startsWith(`/${locale}${path}`));
+
   const token = req.cookies.get("access_token")?.value;
   const refresh = req.cookies.get("refresh_token")?.value;
 

@@ -137,9 +137,11 @@ export async function callApi<T>(url: string, method: HTTP_METHOD_ENUM, data?: a
           localStorage.removeItem(APP_ROLE.USER);
           localStorage.setItem("session_expired", "1");
         } catch {}
-        // Tránh vòng lặp khi đã ở trang auth
-        const isOnAuthPage = ["/login", "/register", "/forgot-password", "/reset-password"].some((p) => currentPath.includes(p));
-        if (!isOnAuthPage) {
+        // Tránh vòng lặp khi đã ở trang auth hoặc public
+        const isOnPublicPage = ["/login", "/register", "/forgot-password", "/reset-password", "/dashboard", "/403", "/activate"].some((p) =>
+          currentPath.includes(p)
+        );
+        if (!isOnPublicPage) {
           window.location.href = `/${currentLocale}/login`;
         }
       }
