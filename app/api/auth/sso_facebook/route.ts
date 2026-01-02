@@ -3,8 +3,15 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { API_ROUTES } from "@/lib/constants/api-routes";
 import { HTTP_METHOD_ENUM, LOCALE } from "@/lib/constants/enum";
-import { SsoAuthToken } from "@/lib/models/sso_auth_token";
 import { UserInfoSso } from "@/lib/models/user";
+
+// Simple interface for OAuth token response
+interface SsoAuthToken {
+  access_token: string;
+  refresh_token?: string;
+  expires_in?: number;
+  token_type?: string;
+}
 
 import { createTokenPair } from "@/lib/utils/jwt";
 import { createResponse } from "@/lib/utils/response";
@@ -101,16 +108,16 @@ async function getHandler(req: NextRequest) {
   // Store refresh token in database (30 days for SSO)
   const refreshTokenExpiry = new Date();
   refreshTokenExpiry.setDate(refreshTokenExpiry.getDate() + 30);
-  
+
   await refreshTokenApp.createRefreshToken(user.id!, refreshToken, refreshTokenExpiry);
-  
+
   const res = NextResponse.redirect(`${FRONTEND_REDIRECT}/${locale}`);
 
   const baseHttpOnly = getAuthCookieBaseOptions(true);
   res.cookies.set("access_token", accessToken, { ...baseHttpOnly, maxAge: 15 * 60 });
   res.cookies.set("refresh_token", refreshToken, { ...baseHttpOnly, maxAge: 30 * 24 * 60 * 60 });
 
-  return res; // content-type không phải JSON → HOF sẽ “bypass”
+  return res; // content-type không phải JSON → HOF sẽ "bypass"
 }
 
 export const GET = withApiHandler(getHandler);

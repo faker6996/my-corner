@@ -1,85 +1,36 @@
-import { safeQuery } from "@/lib/modules/common/safe_query";
-import { baseRepo } from "@/lib/modules/common/base_repo";
+import { query } from "@/lib/db";
 import { UserToken } from "@/lib/models/user_token";
 
 export const userTokenRepo = {
-    /**
-     * Tạo token mới và insert vào DB
-     */
-    async createToken(
-        userId: number,
-        tokenHash: string,
-        purpose: string,
-        expiresAt: Date,
-        metadata?: Record<string, any>
-    ): Promise<UserToken> {
-        const token = new UserToken({
-            user_id: userId,
-            token_hash: tokenHash,
-            purpose,
-            expires_at: expiresAt.toISOString(),
-            created_at: new Date().toISOString(),
-            metadata: metadata || {},
-        });
-        return await baseRepo.insert<UserToken>(token);
-    },
-
-    /**
-     * Tìm token hợp lệ (chưa hết hạn, chưa sử dụng)
-     */
-    async findValidToken(tokenHash: string, purpose?: string): Promise<UserToken | null> {
-        let sql = `
-      SELECT * FROM ${UserToken.table}
-      WHERE token_hash = $1
-        AND used_at IS NULL
-        AND expires_at > NOW()
+  async createToken(userId: number, tokenHash: string, tokenType: string, expiresAt: Date): Promise<UserToken> {
+    const sql = `
+      INSERT INTO user_tokens (user_id, token_hash, token_type, expires_at, created_at)
+      VALUES ($1, $2, $3, $4, NOW())
+      RETURNING *
     `;
-        const params: any[] = [tokenHash];
+    const result = await query(sql, [userId, tokenHash, tokenType, expiresAt]);
+    const rows = result.rows || result;
+    return new UserToken(rows[0]);
+  },
 
-        if (purpose) {
-            sql += ` AND purpose = $2`;
-            params.push(purpose);
-        }
-
-        const { rows } = await safeQuery(sql, params);
-        return rows[0] ? new UserToken(rows[0]) : null;
-    },
-
-    /**
-     * Đánh dấu token đã sử dụng
-     */
-    async markTokenUsed(id: number): Promise<void> {
-        const sql = `UPDATE ${UserToken.table} SET used_at = NOW() WHERE id = $1`;
-        await safeQuery(sql, [id]);
-    },
-
-    /**
-     * Xóa tất cả token chưa sử dụng của user (dùng khi gửi lại invite)
-     */
-    async revokeUnusedTokens(userId: number, purpose: string): Promise<void> {
-        const sql = `
-      UPDATE ${UserToken.table}
-      SET used_at = NOW()
-      WHERE user_id = $1 AND purpose = $2 AND used_at IS NULL
+  async findValidToken(tokenHash: string, tokenType: string): Promise<UserToken | null> {
+    const sql = `
+      SELECT * FROM user_tokens
+      WHERE token_hash = $1 AND token_type = $2 AND expires_at > NOW() AND used_at IS NULL
+      LIMIT 1
     `;
-        await safeQuery(sql, [userId, purpose]);
-    },
+    const result = await query(sql, [tokenHash, tokenType]);
+    const rows = result.rows || result;
+    return rows.length > 0 ? new UserToken(rows[0]) : null;
+  },
 
-    /**
-     * Lấy token theo user và purpose (chủ yếu để debug/admin)
-     */
-    async getTokensByUser(userId: number, purpose?: string): Promise<UserToken[]> {
-        let sql = `SELECT * FROM ${UserToken.table} WHERE user_id = $1`;
-        const params: any[] = [userId];
+  async markTokenUsed(id: number): Promise<void> {
+    const sql = `UPDATE user_tokens SET used_at = NOW() WHERE id = $1`;
+    await query(sql, [id]);
+  },
 
-        if (purpose) {
-            sql += ` AND purpose = $2`;
-            params.push(purpose);
-        }
-
-        sql += ` ORDER BY created_at DESC`;
-
-        const { rows } = await safeQuery(sql, params);
-        return rows.map((row) => new UserToken(row));
-    },
+  async revokeUnusedTokens(userId: number, tokenType: string): Promise<void> {
+    const sql = `UPDATE user_tokens SET used_at = NOW() WHERE user_id = $1 AND token_type = $2 AND used_at IS NULL`;
+    await query(sql, [userId, tokenType]);
+  },
 };

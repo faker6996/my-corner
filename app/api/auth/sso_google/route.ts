@@ -1,6 +1,13 @@
 import { API_ROUTES } from "@/lib/constants/api-routes";
 import { HTTP_METHOD_ENUM, LOCALE } from "@/lib/constants/enum";
-import { SsoAuthToken } from "@/lib/models/sso_auth_token";
+
+// Simple interface for OAuth token response
+interface SsoAuthToken {
+  access_token: string;
+  refresh_token?: string;
+  expires_in?: number;
+  token_type?: string;
+}
 import { UserInfoSsoGg } from "@/lib/models/user";
 import { ssoGoogleApp } from "@/lib/modules/auth/sso_google/applications/sso_google_app";
 import { ApiError } from "@/lib/utils/error";
@@ -79,10 +86,10 @@ async function getHandler(req: NextRequest) {
 
   // 4. Kiểm tra/tạo user trong DB
   const user = await ssoGoogleApp.handleAfterSso(userInfo);
-  
+
   // Cache user after successful login
   await cacheUser(user);
-  
+
   // Generate token pair
   const { accessToken, refreshToken } = createTokenPair({
     sub: user.id!.toString(),
@@ -95,9 +102,9 @@ async function getHandler(req: NextRequest) {
   // Store refresh token in database (30 days for SSO)
   const refreshTokenExpiry = new Date();
   refreshTokenExpiry.setDate(refreshTokenExpiry.getDate() + 30);
-  
+
   await refreshTokenApp.createRefreshToken(user.id!, refreshToken, refreshTokenExpiry);
-  
+
   // Redirect with cookies
   const response = NextResponse.redirect(`${FRONTEND_REDIRECT}/${locale}`);
 
