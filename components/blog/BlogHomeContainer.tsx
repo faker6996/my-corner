@@ -74,7 +74,15 @@ export default function BlogHomeContainer() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       {/* Hero Section */}
-      <Section spacing="lg" className="text-center rounded-2xl mb-12 bg-linear-to-r from-primary/80 to-secondary/80 text-primary-foreground">
+      <Section
+        variant="gradient"
+        gradientFrom="from-primary/80"
+        gradientTo="to-secondary/80"
+        gradientDirection="to-r"
+        spacing="lg"
+        fullWidth
+        className="text-center rounded-2xl mb-12 text-primary-foreground"
+      >
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg">BachTV's Corner</h1>
         <p className="text-lg md:text-xl opacity-90 max-w-xl mx-auto">Chia sẻ kinh nghiệm lập trình, công nghệ và cuộc sống</p>
       </Section>

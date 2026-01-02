@@ -52,7 +52,15 @@ export default function SearchPageContainer({ query = "" }: SearchPageContainerP
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       {/* Search Header */}
-      <Section spacing="lg" className="text-center rounded-2xl mb-10 bg-gradient-to-r from-primary/80 to-secondary/80 text-primary-foreground">
+      <Section
+        variant="gradient"
+        gradientFrom="from-primary/80"
+        gradientTo="to-secondary/80"
+        gradientDirection="to-r"
+        spacing="lg"
+        fullWidth
+        className="text-center rounded-2xl mb-10 text-primary-foreground"
+      >
         <h1 className="text-3xl font-bold mb-6">Tìm kiếm bài viết</h1>
         <form onSubmit={handleSubmit} className="flex gap-3 max-w-lg mx-auto">
           <Input

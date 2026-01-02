@@ -20,7 +20,7 @@
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.18",
     "@types/ioredis": "^4.28.10",
-    "@underverse-ui/underverse": "^0.2.29",
+    "@underverse-ui/underverse": "^0.2.35",
     "axios": "^1.13.2",
     "bcrypt": "^6.0.0",
     "class-variance-authority": "^0.7.1",

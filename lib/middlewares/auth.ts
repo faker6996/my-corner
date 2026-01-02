@@ -16,6 +16,11 @@ const PUBLIC_ROUTES = [
   "/403",
   "/activate",
   "", // Root path /{locale}
+  // Blog routes - public
+  "/blog",
+  "/category",
+  "/tag",
+  "/search",
 ];
 
 export async function withAuth(req: NextRequest, res: NextResponse): Promise<NextResponse> {

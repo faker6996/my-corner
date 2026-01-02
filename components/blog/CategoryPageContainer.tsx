@@ -81,7 +81,15 @@ export default function CategoryPageContainer({ slug }: CategoryPageContainerPro
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       {/* Header */}
-      <Section spacing="lg" className="text-center rounded-2xl mb-10 bg-gradient-to-r from-primary/70 to-secondary/70 text-primary-foreground">
+      <Section
+        variant="gradient"
+        gradientFrom="from-primary/70"
+        gradientTo="to-secondary/70"
+        gradientDirection="to-r"
+        spacing="lg"
+        fullWidth
+        className="text-center rounded-2xl mb-10 text-primary-foreground"
+      >
         <h1 className="text-3xl md:text-4xl font-bold mb-2">{category.name}</h1>
         {category.description && <p className="opacity-90">{category.description}</p>}
       </Section>
