@@ -1,4 +1,4 @@
-import DashboardContainer from "@/components/dashboard/DashboardContainer";
+import DashboardContainer from "@/components/admin/dashboard/DashboardContainer";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "@/lib/i18n/getMessages";
 

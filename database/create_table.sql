@@ -557,13 +557,14 @@ INSERT INTO menus (code, name, path, icon, parent_id, sort_order) VALUES
   ('dashboard', 'Dashboard', '/dashboard', 'Home', NULL, 1),
   ('posts', 'Bài viết', '/admin/posts', 'FileText', NULL, 2),
   ('categories', 'Danh mục', '/admin/categories', 'Folder', NULL, 3),
-  ('comments', 'Bình luận', '/admin/comments', 'MessageSquare', NULL, 4),
-  ('ads', 'Quảng cáo', '/admin/ads', 'Megaphone', NULL, 5),
+  ('tags', 'Thẻ tags', '/admin/tags', 'Tag', NULL, 4),
+  ('comments', 'Bình luận', '/admin/comments', 'MessageSquare', NULL, 5),
+  ('ads', 'Quảng cáo', '/admin/ads', 'Megaphone', NULL, 6),
   ('settings', 'Cài đặt', '/settings', 'Settings', NULL, 10),
-  ('users', 'Người dùng', '/settings/users', 'Users', 6, 1),
-  ('roles', 'Vai trò', '/settings/roles', 'Shield', 6, 2),
-  ('permissions', 'Phân quyền', '/settings/permissions', 'Lock', 6, 3),
-  ('logs', 'Nhật ký', '/settings/logs', 'ScrollText', 6, 4)
+  ('users', 'Người dùng', '/settings/users', 'Users', 7, 1),
+  ('roles', 'Vai trò', '/settings/roles', 'Shield', 7, 2),
+  ('permissions', 'Phân quyền', '/settings/permissions', 'Lock', 7, 3),
+  ('logs', 'Nhật ký', '/settings/logs', 'ScrollText', 7, 4)
 ON CONFLICT (code) DO NOTHING;
 
 -- Seed default categories
