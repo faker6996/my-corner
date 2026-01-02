@@ -4,56 +4,60 @@
 
 Blog cá nhân chia sẻ kinh nghiệm lập trình với các tính năng: bài viết, bình luận, like, chia sẻ social, quản lý admin.
 
----
+## Architecture Pattern
 
-## Phase 1: Backend APIs (Core)
+> **Tuân theo pattern các API cũ đang có:**
 
-### 1.1 Posts Module
+```
+app/api/[resource]/route.ts    → API endpoints (gọi app)
+lib/modules/[module]/
+├── applications/[module]_app.ts   → Business logic
+├── repositories/[module]_repo.ts  → Database access
+lib/models/[model].ts              → Entity class
+```
 
-- [ ] `lib/modules/posts/` - CRUD bài viết
-- [ ] `app/api/posts/` - Endpoints: list, detail, create, update, delete
-- [ ] `app/api/posts/[slug]/` - Get post by slug
-- [ ] Pagination, filtering by category/tag/status
+**Ví dụ cho Posts module:**
 
-### 1.2 Categories & Tags
-
-- [ ] `lib/modules/categories/` - CRUD danh mục
-- [ ] `lib/modules/tags/` - CRUD tags
-- [ ] `app/api/categories/`, `app/api/tags/`
-
-### 1.3 Comments
-
-- [ ] `lib/modules/comments/` - Bình luận (nested replies)
-- [ ] `app/api/posts/[id]/comments/` - CRUD comments
-
-### 1.4 Likes & Shares
-
-- [ ] `app/api/posts/[id]/like` - Like/unlike
-- [ ] `app/api/posts/[id]/share` - Track shares
+```
+app/api/posts/route.ts
+lib/modules/posts/applications/post_app.ts
+lib/modules/posts/repositories/post_repo.ts
+lib/models/post.ts
+```
 
 ---
 
-## Phase 2: Frontend Pages (Public)
+## Phase 1: Backend APIs (Core) ✅
 
-### 2.1 Home Page
+### 1.1 Posts Module ✅
 
-- [ ] `app/[locale]/(pages)/page.tsx` - Trang chủ blog
-- [ ] Featured posts, recent posts, categories
+### 1.2 Categories & Tags ✅
 
-### 2.2 Post List & Detail
+### 1.3 Comments ✅
 
-- [ ] `app/[locale]/(pages)/blog/page.tsx` - Danh sách bài viết
-- [ ] `app/[locale]/(pages)/blog/[slug]/page.tsx` - Chi tiết bài viết
-- [ ] Components: `PostCard`, `PostDetail`, `CommentSection`
+### 1.4 Likes & Shares ✅
 
-### 2.3 Category & Tag Pages
+---
 
-- [ ] `app/[locale]/(pages)/category/[slug]/page.tsx`
-- [ ] `app/[locale]/(pages)/tag/[slug]/page.tsx`
+## Phase 2: Frontend Pages (Public) ✅
 
-### 2.4 Search
+### 2.1 Home Page ✅
 
-- [ ] `app/[locale]/(pages)/search/page.tsx` - Tìm kiếm bài viết
+### 2.2 Post List & Detail ✅
+
+### 2.3 Category & Tag Pages ✅
+
+### 2.4 Search ✅
+
+### 2.5 Underverse UI + Tailwind CSS ✅
+
+**SSR SEO:** Tất cả pages sử dụng `generateMetadata` với:
+
+- Dynamic OG tags
+- Twitter cards
+- Canonical URLs
+- i18n alternates
+- Structured data
 
 ---
 
@@ -128,6 +132,8 @@ Blog cá nhân chia sẻ kinh nghiệm lập trình với các tính năng: bài
 
 Schema: `database/create_table.sql`
 
+### Blog Tables
+
 | Bảng             | Mô tả             | ID Type    |
 | ---------------- | ----------------- | ---------- |
 | `users`          | Người dùng        | INT        |
@@ -140,3 +146,28 @@ Schema: `database/create_table.sql`
 | `post_shares`    | Chia sẻ           | **BIGINT** |
 | `advertisements` | Quảng cáo         | INT        |
 | `system_logs`    | Logs              | INT        |
+
+### RBAC Tables (đã có sẵn)
+
+| Bảng                    | Mô tả               |
+| ----------------------- | ------------------- |
+| `roles`                 | Vai trò             |
+| `menus`                 | Menu                |
+| `actions`               | Actions (CRUD)      |
+| `permissions`           | Quyền hạn           |
+| `menu_actions`          | Gán action cho menu |
+| `role_permissions`      | Gán quyền cho role  |
+| `user_permissions`      | Gán quyền cho user  |
+| `user_role_assignments` | Gán role cho user   |
+| `menu_translations`     | Dịch menu           |
+| `action_translations`   | Dịch action         |
+
+---
+
+## Đã hoàn thành
+
+- [x] Database schema (22 tables)
+- [x] Models: User, Post, Category, Tag, Comment, Advertisement
+- [x] RBAC system (roles, permissions, menus)
+- [x] Authentication (login, register, SSO Google/Facebook)
+- [x] Middleware (auth, CORS, rate limit)
